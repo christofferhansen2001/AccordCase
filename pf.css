@@ -1,0 +1,380 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Logo Section */
+.logo-section {
+    background-color: #e05e13;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Navigation Section */
+.navigation-section {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+}
+
+/* Sub Header */
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    background: white;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.search-cart {
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.icon {
+    font-weight: bold;
+}
+
+/* Content Container */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+}
+
+/* Product Section */
+.product-section {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.product-title {
+    padding: 20px;
+}
+
+.product-title h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.product-title h2 {
+    font-size: 16px;
+    margin: 5px 0 0;
+    font-weight: normal;
+}
+
+.product-content {
+    display: flex;
+}
+
+/* Product Image */
+.product-image {
+    flex: 1;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.release-date {
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-top: -30px;
+    position: relative;
+    text-align: center;
+}
+
+/* Product Details */
+.product-details {
+    flex: 1;
+    padding: 0 20px;
+    border-left: 1px solid #eee;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.tab.active {
+    font-weight: bold;
+}
+
+.circle-icon {
+    color: black;
+    margin-right: 5px;
+}
+
+.circle-icon-outline {
+    color: #ccc;
+    margin-right: 5px;
+}
+
+/* Info Content */
+.info-content {
+    border-bottom: 1px solid #eee;
+}
+
+.info-row {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.info-label {
+    flex: 1;
+    font-weight: bold;
+}
+
+.info-value {
+    flex: 2;
+}
+
+/* Availability Status */
+.availability-status {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.low-stock {
+    background-color: #f1c40f;
+}
+
+.status-text {
+    font-weight: bold;
+}
+
+/* Review Summary under availability status */
+.review-summary {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.review-summary-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.review-summary .stars {
+    color: #ffd700;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.rating-value {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.rating-count {
+    color: #777;
+    margin-right: 15px;
+}
+
+.see-reviews {
+    color: #e05e13;
+    font-weight: bold;
+}
+
+/* Make sure we have smooth scrolling for the anchor link */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Price Section */
+.price-section {
+    text-align: right;
+    padding: 20px 0;
+}
+
+.price {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.price sup {
+    font-size: 24px;
+    vertical-align: super;
+}
+
+/* Button */
+.button-container {
+    margin-top: 20px;
+}
+
+.add-to-cart {
+    background: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-icon {
+    font-size: 20px;
+}
+
+/* Releases Section */
+.releases-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.releases-count {
+    font-weight: normal;
+}
+
+/* Reviews Section */
+.reviews-section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviews-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.overall-rating {
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.rating-count {
+    color: #777;
+}
+
+.write-review-btn {
+    background: #e05e13;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.review-list {
+    margin-top: 20px;
+}
+
+.review-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+
+.reviewer-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.reviewer-name {
+    font-weight: bold;
+}
+
+.review-date {
+    color: #777;
+    font-size: 14px;
+}
+
+.review-rating {
+    margin-bottom: 10px;
+}
+
+.review-content {
+    line-height: 1.5;
+}
